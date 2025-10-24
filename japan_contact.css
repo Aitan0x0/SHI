@@ -1,0 +1,330 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.active {
+    color: #ffffff !important;
+    background-color: #99989878 !important;
+    border-radius: 0.3cm;
+}
+
+nav ul li a:hover {
+    color: rgb(236, 53, 53) !important;
+    transform: translateY(-2px);
+}
+
+.active:hover {
+    transform: none;
+    color: #ffffff !important;
+    border: none;
+
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 1px;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+nav ul li a {
+    font-weight: 800 !important;
+    color: white !important;
+    font-size: 15px !important;
+}
+
+nav {
+    z-index: 1000;
+    background-color: #0c0c0ce5
+}
+
+
+
+
+.navbar-brand {
+    font-size: 40px !important;
+    font-weight: 900;
+    font-style: normal;
+    border-radius: 100%;
+    text-shadow: -2px -1px 0px rgba(0, 0, 0, 0.73);
+    color: #ffffff !important;
+
+}
+
+header {
+    background-color: #181818f5;
+    height: 100vh;
+    padding: 80px 0px 0px;
+
+
+}
+
+header h1 {
+
+    color: #faf4f4ef;
+    font-size: 65px;
+    font-family: "Reenie Beanie", serif;
+    font-weight: 600;
+    font-style: normal;
+    margin: auto;
+    text-align: center;
+
+}
+
+
+
+
+textarea {
+    height: 150px !important;
+    resize: none;
+}
+
+.inputs input:focus,
+.inputs textarea:focus {
+    outline: none !important;
+    border: none;
+    box-shadow: 0px 0px 5px 9px rgba(171, 13, 13, 0.41) !important;
+}
+
+.submit-btn {
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    font-weight: 800;
+    border-radius: 0.2cm;
+    color: #ffffff;
+    background-color: rgb(91, 25, 25);
+    text-transform: uppercase;
+    margin: 20px 0px 0px;
+    padding: 15px;
+    transition: 0.3s;
+
+}
+
+.submit-btn:hover {
+    background-color: rgb(165, 17, 17);
+    transform: translateY(-5px);
+}
+
+.div-inputs {
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    border-radius: 0.5cm;
+}
+
+
+.inputs {
+    width: 58%;
+    position: relative;
+    left: 0%;
+    /* background-color: rgb(33 33 33); */
+    padding: 50px 80px 40px;
+    animation-name: soldan-saga;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    border: 3px solid rgba(255, 255, 255, 0.594);
+    border-radius: 0.5cm;
+}
+
+.div {
+    width: 25%;
+    text-align: center;
+    padding: 40px;
+    animation-name: sagdan-sola;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    position: absolute;
+    background-color: white;
+    border-radius: 0.5cm;
+    top: 10%;
+    z-index: 3;
+    left: 65%;
+}
+
+i {
+
+    color: #5b1919 !important;
+}
+
+h2 span {
+    font-weight: 900 !important;
+    font-size: 25px !important;
+}
+
+@media (max-width:800px) {
+    nav ul li {
+        text-align: center;
+    }
+
+    header {
+        background-color: #181818f5;
+        height: 100vh;
+        padding: 80px 0px 0px;
+        align-items: center;
+        display: flex;
+    }
+
+    header h1 {
+
+        color: #faf4f4ef;
+        font-size: 55px;
+        font-family: "Reenie Beanie", serif;
+        font-weight: 600;
+        font-style: normal;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    h2 span {
+        display: none;
+    }
+
+
+    textarea {
+        height: 108px !important;
+        resize: none;
+    }
+
+    .col-lg-12 {
+        width: 33% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px !important;
+        position: relative;
+    }
+
+
+
+   
+
+    .div-inputs {
+        padding: 0px !important;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        position: static;
+        justify-content: center;
+        border-radius: 0.5cm;
+    }
+
+
+    .inputs {
+        width: 95%;
+        margin-bottom: 50px;
+        /* background-color: rgb(33 33 33); */
+        padding: 20px 30px;   animation-name: yaranir;
+         border: 2px solid rgba(255, 255, 255, 0.594);
+
+        animation-duration: 1.5s;
+        /* border: 1px solid rgba(255, 255, 255, 0.594); */
+        border-radius: 0.5cm;
+        position: static;
+    }
+
+    .col-lg-12:nth-child(1)::after,
+    .col-lg-12:nth-child(2)::after {
+        content: "";
+        display: block;
+        background-color: #5b1919;
+        height: 100%;
+        width: 1px;
+
+        position: absolute;
+        right: -1%;
+
+
+    }
+
+    .div {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        animation-name: yaranir;
+        animation-duration: 1.5s;
+        animation-delay:1.5s ;
+        position: static;
+        display: flex;
+        left: 0%;
+        border-radius: 0%;
+
+    }
+
+    h2 {
+        font-weight: 900 !important;
+        font-size: 25px !important;
+
+    }
+
+    .div p {
+        margin: 0px;
+    }
+}
+
+@keyframes yaranir {
+    from {
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+
+    }
+
+}
+
+@keyframes sagdan-sola {
+    from {
+        opacity: 0;
+        left: 100%;
+    }
+
+    to {
+        left: 65%;
+        opacity: 1;
+
+    }
+
+
+
+}
+
+@keyframes soldan-saga {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    to {
+        left: 10%;
+        opacity: 1;
+
+    }
+
+
+
+}

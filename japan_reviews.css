@@ -1,0 +1,599 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.active {
+    color: #ffffff !important;
+    background-color: #99989878 !important;
+    border-radius: 0.3cm;
+}
+
+nav ul li a:hover {
+    color: rgb(236, 53, 53) !important;
+    transform: translateY(-2px);
+}
+
+.active:hover {
+    transform: none;
+    color: #ffffff !important;
+    border: none;
+
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 1px;
+    height: 50%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+nav ul li a {
+    font-weight: 800 !important;
+    color: white !important;
+    font-size: 15px !important;
+}
+
+nav {
+    z-index: 1000;
+    background-color: #0c0c0ce5
+}
+
+.scroll-nav-a {
+    color: black !important;
+}
+
+.scroll-nav {
+    background-color: #0c0c0ce5 !important;
+    box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.55);
+
+}
+
+
+.navbar-brand {
+    font-size: 40px !important;
+    font-weight: 900;
+    font-style: normal;
+    border-radius: 100%;
+    text-shadow: -2px -1px 0px rgba(0, 0, 0, 0.73);
+    color: #ffffff !important;
+
+}
+
+header {
+    /* background-color: aqua; */
+    padding-top: 100px;
+    background-color: #181818f5;
+}
+
+header .container {
+    position: relative;
+}
+
+.header-img {
+    box-shadow: 0px 0px 23px -9px rgba(0, 0, 0, 0.68);
+    width: 62%;
+    opacity: 0;
+    height: 500px;
+    position: relative;
+    animation-name: soldan-saga;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("https://therealjapan.b-cdn.net/wp-content/uploads/2021/03/kimono-Tokyo-Sofia-Monteiro.jpg"); */
+    background-size: cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url("https://therealjapan.b-cdn.net/wp-content/uploads/2021/03/kimono-Tokyo-Sofia-Monteiro.jpg");
+    border-radius: 0.5cm;
+    /* background-image: url("https://img.freepik.com/free-vector/retro-abstract-background-with-grunge-texture_36662-1517.jpg?t=st=1739295107~exp=1739298707~hmac=193a8ef98d16e7f31b57880b167ece1351551fe43e12a4696899e9bc0dcff980&w=996"); */
+}
+
+header h1 {
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffffca;
+    /* background-color: #a20c0c7a; */
+    box-shadow: 0px 0px 23px -9px rgba(0, 0, 0, 0.68);
+    width: 50%;
+    top: 30%;
+    right: 0%;
+    opacity: 0;
+    animation-name: opacity;
+    animation-duration: 1.5s;
+    animation-delay: 1.7s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    font-family: "Reenie Beanie", serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 70px 30px;
+    border-radius: 0.5cm;
+    text-align: center;
+
+}
+
+
+
+#comments_inputs {
+    padding: 200px 0px;
+    background-color: #181818f5;
+
+}
+
+.comment {
+    width: 32%;
+    border: 1px solid rgba(255, 255, 255, 0.594);
+    border-radius: 0.3cm;
+    height: min-content;
+    padding: 30px 30px;
+    margin: 15px 5px;
+
+
+    transition: 0.5s;
+}
+
+.comment h3 {
+    text-transform: capitalize;
+}
+
+.stars {
+    color: #464646;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+}
+
+.comment p {
+    color: #ffffff;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 100%;
+    text-align: center;
+}
+
+.comment:hover {
+    transform: translateY(-6px);
+    background-color: rgba(74, 74, 74, 0.322);
+    cursor: default;
+}
+
+.comments {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 0px 50px;
+    justify-content: space-evenly;
+
+}
+
+.inputs-h1 {
+    width: 100%;
+    background-color: rgb(91, 25, 25);
+    padding: 25px 0px;
+    text-align: center;
+
+
+}
+
+.inputs-h1 h1 {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    color: rgb(245, 245, 245);
+    font-family: "Reenie Beanie", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 70px;
+    padding: 0px 10px;
+}
+
+
+.inputs {
+    padding: 50px 0px 0px;
+
+
+}
+
+.inputs .border-div {
+    border: 1px solid rgba(255, 255, 255, 0.594);
+    width: 50%;
+    position: relative;
+    margin: auto;
+    padding: 100px 50px 30px;
+    border-radius: 0.5cm;
+}
+
+.stars_review {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.mark {
+    font-size: 70px;
+    background-color: transparent;
+    position: absolute;
+    top: -18px;
+    left: 324px;
+    color: rgb(91, 25, 25);
+}
+
+.stars_review i {
+    cursor: pointer;
+    font-size: 30px;
+    color: #464646;
+}
+
+.star_active {
+    color: #ffa629 !important;
+}
+
+.review_btn {
+    margin: auto;
+    display: block;
+    font-size: 25px;
+    color: #ffffff;
+    background-color: rgb(91, 25, 25);
+    border: none;
+    padding: 10px;
+    margin: 15px 0px;
+    font-weight: 600;
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 0.2cm;
+}
+
+.review_btn:hover {
+    background-color: rgb(165, 17, 17);
+    transform: translateY(-5px);
+}
+
+.inputs input:focus,
+.inputs textarea:focus {
+    outline: none !important;
+    border: none;
+    box-shadow: 0px 0px 5px 9px rgba(171, 13, 13, 0.41) !important;
+
+
+
+}
+
+footer {
+    padding: 100px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.92) !important;
+}
+
+footer h2 {
+    color: #bebebebb !important;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+
+footer h2::after {
+    content: "";
+    width: 50%;
+    display: block;
+    margin-top: 5px;
+    background-color: #a20c0c7a;
+    height: 2px;
+}
+
+footer .followus li {
+    color: rgba(197, 197, 197, 0.744);
+
+
+}
+
+footer ul {
+    list-style: none;
+    padding: 0px !important;
+}
+
+.aboutus a {
+    margin: 0px 10px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.aboutus a:hover {
+    color: #eb0a0a92;
+    padding: 5px;
+    border-bottom: 2px solid #eb0a0a92;
+
+}
+
+.btnlink {
+    font-size: 15px !important;
+    position: relative;
+    padding: 10px 0px;
+    color: #eb0a0a92 !important;
+}
+
+.btnlink:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    height: 1px;
+    background-color: #eb0a0a92;
+}
+
+
+
+.btnlink::after {
+    content: "";
+    display: block;
+    width: 0%;
+    transition: 1s;
+    position: absolute;
+    right: 0%;
+    height: 1px;
+    background-color: #eb0a0a92;
+}
+
+.quicklinks a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+
+    background-color: #eb0a0a92;
+}
+
+.quicklinks a {
+    position: relative;
+    font-size: 15px;
+    transition: 0.3s;
+
+}
+
+.quicklinks a:hover {
+    color: #eb0a0a92;
+}
+
+.quicklinks a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    transition: 1s;
+    position: absolute;
+    right: 0%;
+    height: 1px;
+    background-color: #eb0a0a92;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(197, 197, 197, 0.744);
+
+}
+
+footer .container p {
+    color: rgba(197, 197, 197, 0.744);
+    padding: 0px 30px 0px 0px !important;
+    font-size: 15px;
+}
+
+
+.footer-bottom {
+    width: 100%;
+    border-top: 1px solid #747474;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    color: #afaeae;
+}
+
+@media (max-width:800px) {
+    nav {
+        background-color: #0c0c0ce5 !important;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    header {
+        padding: 100px 0px 100px;
+    }
+
+    header>.container {
+        padding: 0px;
+
+    }
+
+    .header-img {
+        width: 100%;
+        height: 350px;
+        border-radius: 0cm;
+        background-position: top;
+    }
+
+    header h1 {
+        font-size: 45px;
+        width: 100%;
+        top: 35%;
+        padding: 30px 15px;
+        border-radius: 0cm
+    }
+
+    /* esas hisse */
+    #comments_inputs {
+        padding: 100px 0px;
+        background-color: #181818f5;
+        border-top: 1px solid #747474;
+
+    }
+
+    .comment {
+        width: 90%;
+        padding: 20px;
+        margin: 15px 0px;
+
+    }
+
+    .comment p {
+
+        font-size: 15px;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+    .inputs-h1 {
+        width: 100%;
+        background-color: rgb(91, 25, 25);
+        padding: 25px 0px;
+        text-align: center;
+
+
+    }
+
+    .inputs-h1 h1 {
+        width: 100%;
+        font-size: 50px;
+    }
+
+
+    .inputs {
+        padding: 50px 0px 0px;
+    }
+
+    .inputs .border-div {
+        border: 1px solid rgba(255, 255, 255, 0.594);
+        width: 95%;
+        position: relative;
+        margin: auto;
+        padding: 60px 30px 10px;
+        border-radius: 0.5cm;
+    }
+
+    .stars_review {
+        margin: 15px 0px;
+    }
+
+    .mark {
+        font-size: 60px;
+        top: -18px;
+        left: 40%;
+    }
+
+    .stars_review i {
+        font-size: 25px;
+    }
+
+    .review_btn {
+        font-size: 15px;
+    }
+    footer {
+        text-align: center;
+    }
+
+    footer .container p {
+        padding: 0px !important;
+    }
+
+    footer h2 {
+        margin: 15px 0px;
+    }
+
+    footer h2::after {
+        content: "";
+        width: 50%;
+        display: block;
+
+        margin: auto;
+        margin-top: 5px;
+        background-color: #a20c0c7a;
+        height: 2px;
+    }
+    footer .footer-div{
+        margin:15px 0px !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes soldan-saga {
+    from {
+        opacity: 0;
+        left: -10%;
+
+
+
+    }
+
+    to {
+        left: 0%;
+        opacity: 1;
+    }
+
+
+
+
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+
+
+
+
+    }
+
+    to {
+
+        opacity: 1;
+    }
+
+
+
+
+}
