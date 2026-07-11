@@ -20,7 +20,7 @@ Bu layihənin əsas məqsədi istifadəçilərə rahat, vizual olaraq cəlbedici
 * **HTML5** — Veb saytın semantik strukturunun qurulması üçün].
 * **CSS3** — Vizual dizayn, rəng palitrası, animasiyalar və responsivlik üçün
 * **JavaScript (ES6+)** — Səbət sistemi, axtarış mexanizmi və digər dinamik interaktiv funksiyaları təmin etmək üçün
-* **Figma** — Layihənin kodlaşdırılma mərhələsindən əvvəl UI/UX dizaynının hazırlanması və piksel-piksel koda köçürülməsi üçün[cite: 1].
+* **Figma** — Layihənin kodlaşdırılma mərhələsindən əvvəl UI/UX dizaynının hazırlanması və piksel-piksel koda köçürülməsi üçün
 
 ---
 
